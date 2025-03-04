@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Hotdeal Finder",
+  "version": "1.0",
+  "description": "쿠팡 상품과 유사한 핫딜을 여러 커뮤니티에서 검색하여 표시합니다.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://bbs.ruliweb.com/market/board/*",
+    "https://www.ppomppu.co.kr/zboard/*",
+    "https://arca.live/b/*",
+    "https://quasarzone.com/bbs/qb_saleinfo*",
+    "https://www.algumon.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+  
+}
